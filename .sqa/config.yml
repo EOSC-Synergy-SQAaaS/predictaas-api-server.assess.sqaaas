@@ -14,40 +14,40 @@ sqa_criteria:
     repos:
       github.com/masterdatascience-UIMP-UC/predictaas-api-server git:
         commands:
-        - /usr/bin/env sh .sqa/script.cranky-red-dodo.sh
-        container: qc.acc_clammy-pumpkin-zonkey
+        - /usr/bin/env sh .sqa/script.snippy-seashell-indri.sh
+        container: qc.acc_jumpy-wisteria-spaniel
   QC.Doc:
     repos:
       github.com/masterdatascience-UIMP-UC/predictaas-api-server find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.skanky-red-lynx.sh
-        container: qc.doc_cloudy-xanthic-cuscus
+        - /usr/bin/env sh .sqa/script.sleepy-cinnamon-fly.sh
+        container: qc.doc_sleepy-brass-indri
       github.com/masterdatascience-UIMP-UC/predictaas-api-server markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.wheezy-cardinal-tortoise.sh
-        container: qc.doc_seedy-ultramarine-monster
+        - /usr/bin/env sh .sqa/script.clammy-crimson-mayfly.sh
+        container: qc.doc_messy-sapphire-jackal
   QC.Lic:
     repos:
       github.com/masterdatascience-UIMP-UC/predictaas-api-server licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.jumpy-apricot-mongoose.sh
-        container: qc.lic_boozy-cinnabar-insect
+        - /usr/bin/env sh .sqa/script.cozy-bronze-jackal.sh
+        container: qc.lic_woolly-periwinkle-catfish
   QC.Met:
     repos:
       github.com/masterdatascience-UIMP-UC/predictaas-api-server cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.wheezy-seashell-ant.sh
-        container: qc.met_clammy-platinum-capuchin
+        - /usr/bin/env sh .sqa/script.sleazy-cobalt-dachsbracke.sh
+        container: qc.met_grumpy-yellow-snail
   QC.Sec:
     repos:
       github.com/masterdatascience-UIMP-UC/predictaas-api-server bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.smelly-rust-woodlouse.sh
-        container: qc.sec_gamy-orchid-cuscus
+        - /usr/bin/env sh .sqa/script.dorky-sepia-millipede.sh
+        container: qc.sec_snippy-smalt-molly
   QC.Sty:
     repos:
       github.com/masterdatascience-UIMP-UC/predictaas-api-server flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.thirsty-razzmatazz-nightingale.sh
-        container: qc.sty_tacky-wheat-bear
+        - /usr/bin/env sh .sqa/script.snoopy-cornflower-tarantula.sh
+        container: qc.sty_clammy-razzmatazz-balinese
 timeout: 600
