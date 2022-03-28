@@ -14,40 +14,40 @@ sqa_criteria:
     repos:
       github.com/masterdatascience-UIMP-UC/predictaas-api-server git:
         commands:
-        - /usr/bin/env sh .sqa/script.snazzy-salmon-indri.sh
-        container: qc.acc_lanky-mustard-yak
+        - /usr/bin/env sh .sqa/script.flaky-crimson-quail.sh
+        container: qc.acc_flaky-olive-snake
   QC.Doc:
     repos:
       github.com/masterdatascience-UIMP-UC/predictaas-api-server find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.sleazy-brown-ocelot.sh
-        container: qc.doc_ugly-turquoise-penguin
+        - /usr/bin/env sh .sqa/script.flimsy-brown-rat.sh
+        container: qc.doc_shaky-celadon-duck
       github.com/masterdatascience-UIMP-UC/predictaas-api-server markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.dorky-copper-argentino.sh
-        container: qc.doc_clammy-grey-bobcat
+        - /usr/bin/env sh .sqa/script.flimsy-wheat-squid.sh
+        container: qc.doc_crappy-sapphire-rattlesnake
   QC.Lic:
     repos:
       github.com/masterdatascience-UIMP-UC/predictaas-api-server licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.ready-periwinkle-tarsier.sh
-        container: qc.lic_whiny-pumpkin-chin
+        - /usr/bin/env sh .sqa/script.muzzy-lavender-rhinoceros.sh
+        container: qc.lic_sloppy-chartreuse-bird
   QC.Met:
     repos:
       github.com/masterdatascience-UIMP-UC/predictaas-api-server cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.stinky-grey-terrier.sh
-        container: qc.met_stinky-orange-hummingbird
+        - /usr/bin/env sh .sqa/script.scaly-black-bee.sh
+        container: qc.met_skimpy-cornflower-rat
   QC.Sec:
     repos:
       github.com/masterdatascience-UIMP-UC/predictaas-api-server bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.stealthy-lilac-buzzard.sh
-        container: qc.sec_sleepy-cerise-quetzal
+        - /usr/bin/env sh .sqa/script.skimpy-smalt-rhinoceros.sh
+        container: qc.sec_wheezy-amethyst-mongoose
   QC.Sty:
     repos:
       github.com/masterdatascience-UIMP-UC/predictaas-api-server flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.gummy-ochre-robin.sh
-        container: qc.sty_surly-violet-olm
+        - /usr/bin/env sh .sqa/script.cranky-chocolate-wrasse.sh
+        container: qc.sty_greasy-emerald-badger
 timeout: 600
