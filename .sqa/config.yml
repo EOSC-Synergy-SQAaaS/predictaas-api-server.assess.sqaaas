@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: 1.3.0-alpha2
+      branch: release/1.1.0
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/masterdatascience-UIMP-UC/predictaas-api-server:
       repo: https://github.com/masterdatascience-UIMP-UC/predictaas-api-server
@@ -14,40 +14,28 @@ sqa_criteria:
     repos:
       github.com/masterdatascience-UIMP-UC/predictaas-api-server git:
         commands:
-        - /usr/bin/env sh .sqa/script.geeky-seashell-gorilla.sh
-        container: qc.acc_hazy-cinnabar-caracal
+        - /usr/bin/env sh .sqa/script.cranky-olivine-stoat.sh
+        container: qc.acc_queasy-amethyst-oriole
   QC.Doc:
     repos:
       github.com/masterdatascience-UIMP-UC/predictaas-api-server find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.flimsy-sapphire-zorse.sh
-        container: qc.doc_sleazy-magenta-angora
+        - /usr/bin/env sh .sqa/script.shaky-alizarin-dachshund.sh
+        container: qc.doc_flabby-sepia-cockroach
       github.com/masterdatascience-UIMP-UC/predictaas-api-server markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.ugly-lime-okapi.sh
-        container: qc.doc_tacky-lime-worm
+        - /usr/bin/env sh .sqa/script.snazzy-brass-bird.sh
+        container: qc.doc_lanky-ivory-fox
   QC.Lic:
     repos:
       github.com/masterdatascience-UIMP-UC/predictaas-api-server licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.crabby-ochre-quail.sh
-        container: qc.lic_squirrely-copper-nightingale
+        - /usr/bin/env sh .sqa/script.craggy-bistre-bee.sh
+        container: qc.lic_sleazy-heliotrope-spaniel
   QC.Met:
     repos:
       github.com/masterdatascience-UIMP-UC/predictaas-api-server cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.nerdy-plum-caracal.sh
-        container: qc.met_messy-vermilion-quokka
-  QC.Sec:
-    repos:
-      github.com/masterdatascience-UIMP-UC/predictaas-api-server bandit:
-        commands:
-        - /usr/bin/env sh .sqa/script.tasty-eggplant-maltese.sh
-        container: qc.sec_crappy-ruby-beagle
-  QC.Sty:
-    repos:
-      github.com/masterdatascience-UIMP-UC/predictaas-api-server flake8:
-        commands:
-        - /usr/bin/env sh .sqa/script.freaky-peach-termite.sh
-        container: qc.sty_scaly-cinnamon-dogfish
+        - /usr/bin/env sh .sqa/script.tacky-maroon-wasp.sh
+        container: qc.met_scanty-yellow-husky
 timeout: 600
