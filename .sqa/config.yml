@@ -14,28 +14,28 @@ sqa_criteria:
     repos:
       github.com/masterdatascience-UIMP-UC/predictaas-api-server git:
         commands:
-        - /usr/bin/env sh .sqa/script.cranky-olivine-stoat.sh
-        container: qc.acc_queasy-amethyst-oriole
+        - /usr/bin/env sh .sqa/script.gummy-sapphire-sheepdog.sh
+        container: qc.acc_jumpy-plum-bracke
   QC.Doc:
     repos:
       github.com/masterdatascience-UIMP-UC/predictaas-api-server find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.shaky-alizarin-dachshund.sh
-        container: qc.doc_flabby-sepia-cockroach
+        - /usr/bin/env sh .sqa/script.geeky-tan-robin.sh
+        container: qc.doc_ready-ochre-flamingo
       github.com/masterdatascience-UIMP-UC/predictaas-api-server markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.snazzy-brass-bird.sh
-        container: qc.doc_lanky-ivory-fox
+        - /usr/bin/env sh .sqa/script.goopy-salmon-insect.sh
+        container: qc.doc_gloppy-buff-orangutan
   QC.Lic:
     repos:
       github.com/masterdatascience-UIMP-UC/predictaas-api-server licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.craggy-bistre-bee.sh
-        container: qc.lic_sleazy-heliotrope-spaniel
+        - /usr/bin/env sh .sqa/script.snoopy-buff-cuttlefish.sh
+        container: qc.lic_chummy-peach-gar
   QC.Met:
     repos:
       github.com/masterdatascience-UIMP-UC/predictaas-api-server cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.tacky-maroon-wasp.sh
-        container: qc.met_scanty-yellow-husky
+        - /usr/bin/env sh .sqa/script.scanty-auburn-akbash.sh
+        container: qc.met_shaggy-brass-liger
 timeout: 600
