@@ -15,46 +15,46 @@ sqa_criteria:
     repos:
       github.com/masterdatascience-UIMP-UC/predictaas-api-server git:
         commands:
-        - /usr/bin/env sh .sqa/script.ugly-firebrick-uakari.sh
-        container: qc.acc_scummy-russet-frise
+        - /usr/bin/env sh .sqa/script.seedy-asparagus-ant.sh
+        container: qc.acc_woozy-pumpkin-crane
   QC.Doc:
     repos:
       github.com/masterdatascience-UIMP-UC/predictaas-api-server find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.trippy-alizarin-sloth.sh
-        container: qc.doc_messy-razzmatazz-buzzard
+        - /usr/bin/env sh .sqa/script.scaly-khaki-paradise.sh
+        container: qc.doc_seedy-crimson-lionfish
       github.com/masterdatascience-UIMP-UC/predictaas-api-server markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.zippy-sepia-woodpecker.sh
-        container: qc.doc_pasty-rose-leopard
+        - /usr/bin/env sh .sqa/script.messy-mustard-turkey.sh
+        container: qc.doc_flabby-burgundy-mongrel
   QC.Lic:
     repos:
       github.com/masterdatascience-UIMP-UC/predictaas-api-server licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.cheeky-seashell-cougar.sh
-        container: qc.lic_flaky-flax-spaniel
+        - /usr/bin/env sh .sqa/script.lumpy-smalt-harrier.sh
+        container: qc.lic_sloppy-turquoise-frigatebird
   QC.Met:
     repos:
       github.com/masterdatascience-UIMP-UC/predictaas-api-server cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.scanty-amaranth-stoat.sh
-        container: qc.met_leaky-lilac-anteater
+        - /usr/bin/env sh .sqa/script.nerdy-indigo-neanderthal.sh
+        container: qc.met_goopy-cinnamon-lemur
   QC.Sec:
     repos:
       github.com/masterdatascience-UIMP-UC/predictaas-api-server bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.homey-peach-meerkat.sh
-        container: qc.sec_flabby-bistre-snail
+        - /usr/bin/env sh .sqa/script.hilly-sepia-quoll.sh
+        container: qc.sec_goopy-chestnut-fish
   QC.Sty:
     repos:
       github.com/masterdatascience-UIMP-UC/predictaas-api-server flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.greasy-crimson-mau.sh
-        container: qc.sty_baggy-orchid-ocelot
+        - /usr/bin/env sh .sqa/script.queasy-myrtle-macaque.sh
+        container: qc.sty_muggy-taupe-harrier
   QC.Ver:
     repos:
       github.com/masterdatascience-UIMP-UC/predictaas-api-server is_semver.py:
         commands:
-        - /usr/bin/env sh .sqa/script.crappy-cardinal-yak.sh
-        container: qc.ver_skinny-magnolia-skunk
+        - /usr/bin/env sh .sqa/script.homely-rose-molly.sh
+        container: qc.ver_seedy-vermilion-rattlesnake
 timeout: 600
