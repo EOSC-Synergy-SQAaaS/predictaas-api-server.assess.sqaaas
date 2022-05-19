@@ -15,46 +15,46 @@ sqa_criteria:
     repos:
       github.com/masterdatascience-UIMP-UC/predictaas-api-server git:
         commands:
-        - /usr/bin/env sh .sqa/script.seedy-asparagus-ant.sh
-        container: qc.acc_woozy-pumpkin-crane
+        - /usr/bin/env sh .sqa/script.hilly-vermilion-cockroach.sh
+        container: qc.acc_fuzzy-auburn-squid
   QC.Doc:
     repos:
       github.com/masterdatascience-UIMP-UC/predictaas-api-server find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.scaly-khaki-paradise.sh
-        container: qc.doc_seedy-crimson-lionfish
+        - /usr/bin/env sh .sqa/script.seedy-cinnamon-frise.sh
+        container: qc.doc_wiggy-jade-argentino
       github.com/masterdatascience-UIMP-UC/predictaas-api-server markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.messy-mustard-turkey.sh
-        container: qc.doc_flabby-burgundy-mongrel
+        - /usr/bin/env sh .sqa/script.gloppy-russet-warthog.sh
+        container: qc.doc_cozy-pink-sloth
   QC.Lic:
     repos:
       github.com/masterdatascience-UIMP-UC/predictaas-api-server licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.lumpy-smalt-harrier.sh
-        container: qc.lic_sloppy-turquoise-frigatebird
+        - /usr/bin/env sh .sqa/script.boozy-gold-moose.sh
+        container: qc.lic_foggy-turquoise-civet
   QC.Met:
     repos:
       github.com/masterdatascience-UIMP-UC/predictaas-api-server cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.nerdy-indigo-neanderthal.sh
-        container: qc.met_goopy-cinnamon-lemur
+        - /usr/bin/env sh .sqa/script.lumpy-scarlet-crocodile.sh
+        container: qc.met_pokey-white-bobcat
   QC.Sec:
     repos:
       github.com/masterdatascience-UIMP-UC/predictaas-api-server bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.hilly-sepia-quoll.sh
-        container: qc.sec_goopy-chestnut-fish
+        - /usr/bin/env sh .sqa/script.hilly-olive-macaw.sh
+        container: qc.sec_dorky-cinnabar-bison
   QC.Sty:
     repos:
       github.com/masterdatascience-UIMP-UC/predictaas-api-server flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.queasy-myrtle-macaque.sh
-        container: qc.sty_muggy-taupe-harrier
+        - /usr/bin/env sh .sqa/script.tacky-ivory-dachsbracke.sh
+        container: qc.sty_clammy-buff-vole
   QC.Ver:
     repos:
       github.com/masterdatascience-UIMP-UC/predictaas-api-server is_semver.py:
         commands:
-        - /usr/bin/env sh .sqa/script.homely-rose-molly.sh
-        container: qc.ver_seedy-vermilion-rattlesnake
+        - /usr/bin/env sh .sqa/script.nerdy-maroon-setter.sh
+        container: qc.ver_wimpy-coral-tuatara
 timeout: 600
