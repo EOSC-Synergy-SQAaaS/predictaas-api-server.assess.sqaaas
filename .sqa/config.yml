@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: 1.6.0-alpha5
+      branch: 1.6.0-alpha6
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/masterdatascience-UIMP-UC/predictaas-api-server:
       branch: master
@@ -15,46 +15,46 @@ sqa_criteria:
     repos:
       github.com/masterdatascience-UIMP-UC/predictaas-api-server git:
         commands:
-        - /usr/bin/env sh .sqa/script.breezy-tan-robin.sh
-        container: qc.acc_breezy-auburn-bird
+        - /usr/bin/env sh .sqa/script.gimpy-carmine-earwig.sh
+        container: qc.acc_sickly-chestnut-gharial
   QC.Doc:
     repos:
       github.com/masterdatascience-UIMP-UC/predictaas-api-server find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.crabby-grey-jaguar.sh
-        container: qc.doc_zippy-taupe-crab
+        - /usr/bin/env sh .sqa/script.pasty-goldenrod-kudu.sh
+        container: qc.doc_sleepy-orange-chimpanzee
       github.com/masterdatascience-UIMP-UC/predictaas-api-server markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.paltry-lavender-bobcat.sh
-        container: qc.doc_frumpy-ecru-dolphin
+        - /usr/bin/env sh .sqa/script.muggy-linen-whale.sh
+        container: qc.doc_smelly-alizarin-tzu
   QC.Lic:
     repos:
       github.com/masterdatascience-UIMP-UC/predictaas-api-server licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.whiny-plum-snail.sh
-        container: qc.lic_pokey-amethyst-labradoodle
+        - /usr/bin/env sh .sqa/script.zippy-lavender-cat.sh
+        container: qc.lic_chewy-cardinal-albatross
   QC.Met:
     repos:
       github.com/masterdatascience-UIMP-UC/predictaas-api-server cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.muzzy-tan-vole.sh
-        container: qc.met_sleepy-pear-ant
+        - /usr/bin/env sh .sqa/script.pasty-white-abyssinian.sh
+        container: qc.met_sleazy-saffron-kiwi
   QC.Sec:
     repos:
       github.com/masterdatascience-UIMP-UC/predictaas-api-server bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.muggy-gamboge-kudu.sh
-        container: qc.sec_wiggy-green-fly
+        - /usr/bin/env sh .sqa/script.baggy-linen-walrus.sh
+        container: qc.sec_messy-emerald-coral
   QC.Sty:
     repos:
       github.com/masterdatascience-UIMP-UC/predictaas-api-server flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.snazzy-amber-havanese.sh
-        container: qc.sty_seedy-white-newfoundland
+        - /usr/bin/env sh .sqa/script.slaphappy-champagne-chameleon.sh
+        container: qc.sty_jumpy-fuchsia-birman
   QC.Ver:
     repos:
-      github.com/masterdatascience-UIMP-UC/predictaas-api-server is_semver.py:
+      github.com/masterdatascience-UIMP-UC/predictaas-api-server get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.snazzy-black-dragon.sh
-        container: qc.ver_slimy-fuchsia-wasp
+        - /usr/bin/env sh .sqa/script.ready-vermilion-spaniel.sh
+        container: qc.ver_ready-rose-gharial
 timeout: 600

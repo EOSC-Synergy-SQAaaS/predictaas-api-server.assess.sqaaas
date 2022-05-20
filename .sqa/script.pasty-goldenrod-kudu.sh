@@ -1,4 +1,4 @@
 (
 cd github.com/masterdatascience-UIMP-UC/predictaas-api-server &&
-    is_semver.py
+    find_doc_files.py --file_type all
 )
